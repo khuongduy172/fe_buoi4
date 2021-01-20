@@ -7,9 +7,10 @@ import Spinner from '../spinner'
 
 import LoadingProvider from '../loadingProvider'
 import UserDetailsProvider from '../userDetailsProvider'
-
+import Header from '../header.js';
 const App = () => (
   <>
+  <Header>
     <GlobalStyle />
     <LoadingProvider>
       <Spinner />
@@ -18,6 +19,7 @@ const App = () => (
         <Main />
       </UserDetailsProvider>
     </LoadingProvider>
+    </Header>
   </>
 )
 
